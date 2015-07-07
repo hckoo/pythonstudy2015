@@ -1,0 +1,15 @@
+
+
+
+
+
+def main():
+    if not len(sys.argv) >= 3:
+        print "copy src [src2 src3..] dst"
+        return
+
+    for src in sys.argv[1:-1]:
+        copy(src, sys.argv[-1], threadcopy)
+
+if __name__ == '__main__':
+    main()
